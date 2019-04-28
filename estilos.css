@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("img/chinh-le-duc-264152-unsplash.jpg") no-repeat;
+  background-size: cover;
+  background-color: rgb(0,0,0);
+}
+
+
+h1{
+  font-family: 'Courgette', cursive;
+  color: white;
+  }
+
+
+.card {
+  background-color: transparent;
+  font-family: 'Raleway';
+  color: white;
+}
+
+p{
+  font-family: 'Courgette';
+  color: rgb(135,135,135);
+  font-size: 35;
+  }
+
+h5 {
+  font-size: 40;
+
+}
+
+
+/* .buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+/*
+
+
+
+
+.container-fluid {
+
+}
+
+.navbar-expand{-sm|-md|-lg|-xl
+} */
