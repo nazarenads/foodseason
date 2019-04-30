@@ -34,6 +34,9 @@ body{
 .form-signup-heading{
   margin-bottom: 10px;
 }
+input{
+  font-family: 'Raleway', sans-serif;
+}
 h1,h3{
   color: white;
   text-align: center;
@@ -41,7 +44,15 @@ h1,h3{
 h1{
   font-family: 'Courgette', cursive;
 }
-.btn-success{
+h3{
+  font-family: 'Raleway', sans-serif;
+}
+.btn{
+  background-color: #EB6E80;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.btn-warning{
   width: 100%;
 }
 .btn-light{
