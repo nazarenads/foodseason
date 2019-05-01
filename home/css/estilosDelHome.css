@@ -3,10 +3,13 @@
 }
 
 body {
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("img/chinh-le-duc-264152-unsplash.jpg") no-repeat;
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/chinh-le-duc-264152-unsplash.jpg") no-repeat center center fixed;
+  height: 100%;
+  width: 100%;
+  position: relative;
   background-size: cover;
-  background-color: rgb(0,0,0);
-}
+  font-family: 'Raleway', sans-serif;
+  }
 
 
 h1{
@@ -17,19 +20,28 @@ h1{
 
 .card {
   background-color: transparent;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   color: white;
+  border-color: transparent;
 }
 
 p{
   font-family: 'Courgette';
   color: rgb(135,135,135);
   font-size: 35;
+  margin-bottom: 15;
   }
 
 h5 {
+  font-family: 'Raleway', sans-serif;
   font-size: 40;
+  margin-bottom: 25;
 
+}
+
+.btn{
+  background-color: #EB6E80;
+  color: white;
 }
 
 
