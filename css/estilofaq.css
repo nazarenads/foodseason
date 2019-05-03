@@ -5,13 +5,19 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(../img/book.jpg) no-repeat center center fixed;
-  height: 100%;
-  width: 100%;
-  position: relative;
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url(img/cook.jpg) no-repeat center center fixed;
   background-size: cover;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.inicio{
+  color:white;
+  margin:20px;
+}
+
+a{
+  text-decoration: none;
 }
 
 h1{
@@ -19,15 +25,48 @@ h1{
   font-style:strong;
   text-align: center;
   font-family:'Courgette', cursive;
+  margin: 40px;
 }
 
 h2{
   color:white;
-  margin:20px;
+  margin:30px;
   text-align:center;
-  font-family: 'Raleway', sans-serif;
 }
+
+.input-group{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-warning{
+  color:white;
+  background-color: #E9B000;
+}
+
+.preguntas{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+h3{
+  color:white;
+  padding-left:20px;
+  margin: 20px;
+}
+
 .ayuda{
   color: white;
-  width: 100%;
+}
+
+.card-header{
+  background-color: #E24E42;
+}
+
+.card-body{
+  background-color: #EB6E80;
+}
+
+button{
+  background-color: #E24E42;
 }
