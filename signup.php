@@ -20,7 +20,7 @@
           <div class="container">
            <div class="formulario">
 
-    		  <h1><i class="fas fa-carrot"></i> Food Season</h1>
+
     		  <form action="signup.php" method="post" class="form-signup">
     		   <h3 class="form-signup-heading">¡Registrate!</h3>
     		   <div class="form-group">
@@ -32,7 +32,7 @@
     		   <div class="form-group">
     		    <input type="password" class="form-control" name="password" placeholder="Contraseña">
     		   </div>
-    		   <button class="btn btn-warning" type="submit" name="subm">Enviar</button>
+    		   <button class="btn btn-warning" style="width:100%" type="submit" name="subm">Enviar</button>
     		   <br/><br>
     		   <a class="btn btn-light" href="signin.php" role="button">¿Ya tenés una cuenta?</a>
     		   <a class="btn btn-light" href="#" role="button">¿Te olvidaste tu contraseña?</a>

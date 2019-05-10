@@ -20,8 +20,8 @@
           <div class="container">
            <div class="formulario">
 
-    		  <h1><i class="fas fa-carrot"></i> Food Season</h1>
-    		  <form method="post" class="form-signup">
+
+    		  <form action="signin.php" method="post" class="form-signup">
     		   <h3 class="form-signup-heading">¡Iniciá sesión!</h3>
     		   <div class="form-group">
     		    <input name="username" type="text" class="form-control" placeholder="Usuario">
@@ -33,7 +33,7 @@
              <input type="checkbox" class="form-check-input" id="materialUnchecked">
              <label class="form-check-label" for="materialUnchecked">Recordarme</label>
            </div>
-    		   <button class="btn btn-warning" id="submit" type="submit" name="subm">Enviar</button>
+    		   <button class="btn btn-warning" style="width:100%" id="submit" type="submit" name="subm">Enviar</button>
     		   <br/><br>
     		   <a class="btn btn-light" href="signup.php" role="button">¿Todavía no tenés una cuenta?</a>
     		   <a class="btn btn-light" href="#" role="button">¿Te olvidaste tu contraseña?</a>
