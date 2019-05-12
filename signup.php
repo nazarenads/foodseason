@@ -115,23 +115,23 @@ if($_POST){
 
     		   <h3 class="form-signup-heading">¡Registrate!</h3>
     		   <div class="form-group">
-    		    <input name="email" type="text" class="form-control" placeholder="Email" value="">
+    		    <input name="email" type="text" class="form-control" placeholder="Email" value="<?=$email?>">
             <?= $errorEmail ?>
     		   </div>
     		   <div class="form-group">
-    		    <input name="username" type="text" class="form-control" placeholder="Usuario" value="">
+    		    <input name="username" type="text" class="form-control" placeholder="Usuario" value="<?=$username?>">
             <?= $errorUsername ?>
            </div>
             <div class="form-group">
-    		    <input name="profilePicture" type="file" class="form-control" value="">
+    		    <input name="profilePicture" type="file" value="">
             <?= $errorPicture ?>
     		   </div>
     		   <div class="form-group">
-    		    <input type="password" class="form-control" name="password" placeholder="Contraseña" value="">
+    		    <input type="password" class="form-control" name="password" placeholder="Contraseña" value="<?=$password?>">
             <?= $errorPassword ?>
            </div>
             <div class="form-group">
-    		    <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirmar contraseña" value= "">
+    		    <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirmar contraseña" value= "<?=$passwordConfirm?>">
     		   </div>
     		   <button class="btn btn-warning" style="width:100%" type="submit" name="submit">Enviar</button>
     		   <br/><br>
