@@ -2,14 +2,8 @@
 //Defino variables vacías para cada campo a completar
 $username = "";
 $password = "";
-//Si llega algo por POST
 
-if ($_POST) {
-//persistencia
-  $username = $_POST["username"];
-  $password = $_POST["password"];
 
-}
 
 
  ?>
@@ -39,10 +33,10 @@ if ($_POST) {
     		  <form action="signin.php" method="post" class="form-signup">
     		   <h3 class="form-signup-heading">¡Iniciá sesión!</h3>
     		   <div class="form-group">
-    		    <input name="username" type="text" class="form-control" placeholder="Usuario">
+    		    <input name="username" type="text" class="form-control" placeholder="Usuario" value="<?= $username ?>">
     		   </div>
     		   <div class="form-group">
-    		    <input type="password" class="form-control" name="password" placeholder="Contraseña">
+    		    <input type="password" class="form-control" name="password" placeholder="Contraseña" value="<?= $password ?>">
     		   </div>
            <div class="form-check">
              <input type="checkbox" class="form-check-input" id="materialUnchecked">
