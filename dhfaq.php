@@ -23,9 +23,6 @@
     <div class="inicio">
       <div class="row">
         <div class="col-xs-12 col-md-12 col-lg-12" style="margin:30px">
-          <!-- <a href="home.html" style="text-decoration:none">
-          <h1 style="color:white; font-style:strong; text-align: center; font-family:'Courgette', cursive"><i class="fas fa-carrot" style="color:white; margin:20px"></i> Food Season</h1>
-          </a> -->
           <h2 style="color:white; margin:20px; text-align:center;">¿Tenes alguna duda?¡Estamos para ayudarte!</h2>
           <div class="row">
   <div class="col-xs-6 col-md-6 col-lg-4" style="padding-left:32px; margin:auto;" >
@@ -44,42 +41,44 @@
         <div class="col-xs-6 col-md-6 col-lg-4">
           <div class="ayuda">
             <br>
-          <h3 style="color:white; padding-left:20px" >Preguntas más frecuentes</h3>
+          <h3 style="color:white; padding-left:20px;" >Preguntas más frecuentes</h3>
             <br>
           </div>
         </div>
       </div>
-      <div class="preguntas" style="padding-left:20px; padding-right:20px">
+      <div class="accordion" id="accordionExample">
+      <div class="preguntas" style="margin:auto;">
+        <div class="container">
         <div class="row">
-        <div class="col-xs-10 col-md-6 col-lg-3">
-        <div class="accordion" id="accordionExample">
-          <div class="card text-white bg-danger mb-3" >
-              <div class="card-header" style="background-color: #E24E42" id="headingOne" >
-              <h2 class="mb-0">
-                <i class="fas fa-hamburger"></i>
-                <br>
-                  <button class="btn btn btn-outline-light"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    ¿Qué es Food Season?
-                </button>
-              </h2>
-            </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body" style="background-color: #EB6E80">
-                    Food Season es una red social donde podrás compartir tus recetas y a su vez ver las recetas de tus amigos. De esta forma crearas comidas deliciosas y creativas. Dandote la posibilidad de no solo de compartir tus recetas sino también de mejorarlas con la colaboracion de tus amigos.
-                  </div>
+      <div class="col-xs-10 col-md-6 col-lg-6">
+      <div class="accordion" id="accordionExample">
+        <div class="card text-white bg-danger mb-3" >
+            <div class="card-header" style="background-color: #E24E42" id="headingOne" >
+            <h2 class="mb-0">
+              <i class="fas fa-hamburger"></i>
+              <br>
+                <button class="btn btn-outline-light collapsed"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  ¿Qué es Food Season?
+              </button>
+            </h2>
+          </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body" style="background-color: #EB6E80">
+                  Food Season es una red social donde podrás compartir tus recetas y a su vez ver las recetas de tus amigos. De esta forma crearas comidas deliciosas y creativas. Dandote la posibilidad de no solo de compartir tus recetas sino también de mejorarlas con la colaboracion de tus amigos.
                 </div>
               </div>
-          </div>
+            </div>
         </div>
-        <div class="col-xs-10 col-md-6 col-lg-3">
+      </div>
+        <div class="col-xs-10 col-md-6 col-lg-6">
         <div class="accordion" id="accordionExample">
           <div class="card text-white bg-danger mb-3" >
               <div class="card-header" style="background-color: #E24E42" id="headingTwo">
               <h2 class="mb-0">
                 <i class="far fa-laugh-beam"></i>
                 <br>
-                <button class="btn btn btn-outline-light"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    Hacer amigos.
+                <button class="btn btn-outline-light collapsed"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Hacer amigos
                 </button>
               </h2>
             </div>
@@ -91,14 +90,14 @@
               </div>
           </div>
         </div>
-        <div class="col-xs-10 col-md-6 col-lg-3">
+        <div class="col-xs-10 col-md-6 col-lg-6">
           <div class="accordion" id="accordionExample">
           <div class="card text-white bg-danger mb-3">
               <div class="card-header" style="background-color: #E24E42" id="headingThree">
               <h2 class="mb-0">
                 <i class="fas fa-ice-cream"></i>
                 <br>
-                <button class="btn btn btn-outline-light" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-outline-light collapsed" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                     Cerrar tu cuenta
                 </button>
               </h2>
@@ -111,14 +110,14 @@
               </div>
           </div>
         </div>
-        <div class="col-xs-10 col-md-6 col-lg-3">
+        <div class="col-xs-10 col-md-6 col-lg-6">
               <div class="card text-white bg-danger mb-3">
                 <div class="accordion" id="accordionExample">
                 <div class="card-header" style="background-color: #E24E42" id="headingFour">
               <h2 class="mb-0">
                 <i class="fas fa-candy-cane"></i>
                 <br>
-                <button class="btn btn btn-outline-light" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="btn btn-outline-light" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Problemas para ingresar
                 </button>
               </h2>
@@ -133,14 +132,14 @@
             </div>
         </div>
         <div class="row">
-            <div class= "col-xs-10 col-md-6 col-lg-3">
+            <div class= "col-xs-10 col-md-6 col-lg-6">
               <div class="accordion" id="accordionExample">
                 <div class="card text-white bg-danger mb-3">
                   <div class="card-header"  style="background-color: #E24E42" id="headingFive">
                     <h2 class="mb-0">
                       <i class="fas fa-apple-alt"></i>
                       <br>
-                    <button class="btn btn btn-outline-light" style="background-color: #E24E42"  type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <button class="btn btn-outline-light" style="background-color: #E24E42"  type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     Preferencias del e-mail
                     </button>
                   </h2>
@@ -153,13 +152,13 @@
                 </div>
               </div>
             </div>
-          <div class="col-xs-10 col-md-6 col-lg-3">
+          <div class="col-xs-10 col-md-6 col-lg-6">
             <div class="card text-white bg-danger mb-3">
               <div class="card-header" style="background-color: #E24E42" id="headingSix">
                 <h2 class="mb-0">
                   <i class="fas fa-pizza-slice"></i>
                   <br>
-                  <button class="btn btn btn-outline-light" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <button class="btn btn-outline-light" style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     Configuracion de la cuenta
                   </button>
                 </h2>
@@ -171,14 +170,14 @@
                 </div>
           </div>
         </div>
-        <div class="col-xs-10 col-md-6 col-lg-3">
+        <div class="col-xs-10 col-md-6 col-lg-6">
         <div class="accordion" id="accordionExample">
           <div class="card text-white bg-danger mb-3" >
               <div class="card-header" style="background-color: #E24E42" id="headingSeven">
               <h2 class="mb-0">
                 <i class="fas fa-cheese"></i>
                 <br>
-                <button class="btn btn btn-outline-light"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                <button class="btn btn-outline-light"  style="background-color: #E24E42" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                     ¿Cómo agrego fotos?
                 </button>
               </h2>
@@ -191,13 +190,13 @@
               </div>
           </div>
         </div>
-          <div class="col-xs-10 col-md-6 col-lg-3">
+          <div class="col-xs-10 col-md-6 col-lg-6">
             <div class="card text-white bg-danger mb-3">
               <div class="card-header" style="background-color: #E24E42" id="headingEight">
                 <h2 class="mb-0">
                   <i class="fas fa-book"></i>
                   <br>
-                  <button class="btn btn btn-outline-light" style="background-color: #E24E42 " type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <button class="btn btn-outline-light" style="background-color: #E24E42 " type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                     Compartir recetas
                   </button>
                 </h2>
@@ -209,6 +208,7 @@
                 </div>
           </div>
         </div>
+      </div>
       </div>
       </div>
     </section>
