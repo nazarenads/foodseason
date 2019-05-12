@@ -12,6 +12,14 @@ $errorPicture = "";
 $hayErrores = false;
 
 //Si llega algo por POST
+if ($_POST) {
+//persistencia
+  $email = $_POST["email"];
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+  $passwordConfirm = $_POST["passwordConfirm"];
+
+}
 
 if($_POST){
 
