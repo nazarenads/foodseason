@@ -1,17 +1,13 @@
 <?php
 //Defino variables vacías para cada campo a completar
-$email = "";
 $username = "";
 $password = "";
-$passwordConfirm = "";
 //Si llega algo por POST
 
 if ($_POST) {
 //persistencia
-  $email = $_POST["email"];
   $username = $_POST["username"];
   $password = $_POST["password"];
-  $passwordConfirm = $_POST["passwordConfirm"];
 
 }
 
