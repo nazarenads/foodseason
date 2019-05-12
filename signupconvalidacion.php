@@ -71,7 +71,7 @@ if($_POST){
       $userArray = [
       "username"=> $username,
       "email"=> $email,
-      "profilePicture" => $username."fotodeperfil.".$ext,
+      "profilePicture" => $username."profilePicture.".$ext,
       "password" => password_hash($password, PASSWORD_DEFAULT)];
       $userJson = json_encode($userArray);
       file_put_contents('usuarios.json',$userJson);
