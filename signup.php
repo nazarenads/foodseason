@@ -1,6 +1,10 @@
 <?php
+//Defino variables vacías para cada campo a completar
+$email = "";
+$username = "";
+$password = "";
+$passwordConfirm = "";
 //Defino variables para cada error posible
-
 $errorUsername = "";
 $errorEmail = "";
 $errorPassword = "";
