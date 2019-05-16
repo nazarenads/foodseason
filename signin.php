@@ -3,10 +3,61 @@
 $username = "";
 $password = "";
 
+//Defino variables para cada error posible
+$errorUsername = "";
+$errorPassword = "";
+$errorUsernameVerify = "";
+$errorPasswordVerify = "";
+$hayErrores = false;
+$hayErroresDeVerificacion = false;
+
+//Recupero los datos del usuario guardados en Json y los paso a un array
+$usuarioGuardadoJson = file_get_contents('usuarios.json');
+$usuarioGuardadoEnArray = json_decode($usuarioGuardadoJson, true);
+
+//Si recibo información por post
+
+if($_POST){
+  //Tomo lo recibido y lo guardo sin espacios
+  $username = trim($_POST["username"]);
+  $password = trim($_POST["password"]);
+
+  //Valido cada dato
+  if($username == ""){
+    $errorUsername = "Completá tu nombre de usuario!";
+    $hayErrores = true;
+  }
+  if($password == ""){
+    $errorPassword = "Completá tu contraseña!";
+    $hayErrores = true;
+  }
+
+  // Si no hay ningún error compruebo que coincidan los datos ingresados con los almacenados
+      if(!$hayErrores){
+
+        if($username !== $usuarioGuardadoEnArray["username"]){
+          $errorUsernameVerify = "El nombre de usuario que ingresaste es incorrecto";
+          $hayErroresDeVerificacion = true;
+        }
+        if(!password_verify($password, $usuarioGuardadoEnArray["password"])){
+          $errorPasswordVerify = "La contraseña que ingresaste es incorrecta";
+          $hayErroresDeVerificacion = true;
+        }
+        //Si los datos coinciden con los almacenados, redirijo al usuario
+          if(!$hayErroresDeVerificacion){
+          header('Location: http://google.com');
+          }
+
+        }
 
 
 
- ?>
+
+
+
+}
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,10 +85,14 @@ $password = "";
     		   <h3 class="form-signup-heading">¡Iniciá sesión!</h3>
     		   <div class="form-group">
     		    <input name="username" type="text" class="form-control" placeholder="Usuario" value="<?= $username ?>">
-    		   </div>
+            <?= $errorUsername ?>
+            <?= $errorUsernameVerify ?>
+           </div>
     		   <div class="form-group">
     		    <input type="password" class="form-control" name="password" placeholder="Contraseña" value="<?= $password ?>">
-    		   </div>
+            <?= $errorPassword ?>
+            <?= $errorPasswordVerify ?>
+           </div>
            <div class="form-check">
              <input type="checkbox" class="form-check-input" id="materialUnchecked">
              <label class="form-check-label" for="materialUnchecked">Recordarme</label>
