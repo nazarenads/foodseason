@@ -48,7 +48,7 @@ if($_POST){
             //Si el usuario pidió que se lo recuerde, almaceno sus datos en $_COOKIE por siete días
             if(isset($_POST['remember'])){
               setcookie('user', $username, time()+60*60*7);
-              setcookie('password', $password, time()+60*60*7);
+              setcookie('password', password_hash($password), time()+60*60*7);
             }
           session_start();
           $_SESSION['username']= $username;

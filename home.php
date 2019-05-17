@@ -28,7 +28,7 @@
                 <h4 class="card-title">¡Llegaste a la red de recetas más cómoda!</h4>
                 <p class="card-text">Encontrá y subí tus propias recetas con fotos y comentarios reales.</p>
                 <p class="card-text">¡Averigüá los ingredientes que usa tu vecina en su cocina que huele tan bien!</p>
-                <a href="signin.html" class="btn btn-warning" style="width:100%;">Ingresar</a>
+                <a href="signin.php" class="btn btn-warning" style="width:100%;">Ingresar</a>
               </div>
             </div>
           </div>
