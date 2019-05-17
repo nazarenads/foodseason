@@ -104,7 +104,7 @@ if($_POST){
              <input type="checkbox" class="form-check-input" id="materialUnchecked" name="remember" value= "1">
              <label class="form-check-label" for="materialUnchecked">Recordarme</label>
            </div>
-    		   <button class="btn btn-warning" style="width:100%" id="submit" type="submit" name="subm">Enviar</button>
+    		   <button class="btn btn-warning" style="width:100%" id="submit" type="submit" name="subm">Ingresar</button>
     		   <br/><br>
     		   <a class="btn btn-light" href="signup.php" role="button">¿Todavía no tenés una cuenta?</a>
     		   <a class="btn btn-light" href="#" role="button">¿Te olvidaste tu contraseña?</a>

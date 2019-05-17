@@ -137,7 +137,7 @@ if($_POST){
             <div class="form-group">
     		    <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirmar contraseña" value= "<?=$passwordConfirm?>">
     		   </div>
-    		   <button class="btn btn-warning" style="width:100%" type="submit" name="submit">Enviar</button>
+    		   <button class="btn btn-warning" style="width:100%" type="submit" name="submit">Crear cuenta</button>
     		   <br/><br>
     		   <a class="btn btn-light" href="signin.php" role="button">¿Ya tenés una cuenta?</a>
     		   <a class="btn btn-light" href="#" role="button">¿Te olvidaste tu contraseña?</a>
