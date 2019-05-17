@@ -33,7 +33,7 @@ session_start();
     </div>
   </nav>
   <?php if(isset($_SESSION['username'])){?>
-    <div class="" style="color:white; text-align:left; margin:20px;">
+    <div class="" style="color:white; text-align:left; margin:20px;position:absolute;z-index:30">
     <h3><?= "Hola ". $_SESSION['username']."!" ?></h3>
     <a href="logout.php" style="color:white;">¿Querés cerrar sesión?</a>
   </div>'
