@@ -79,7 +79,7 @@ if($_POST){
       "password" => password_hash($password, PASSWORD_DEFAULT)];
       $userJson = json_encode($userArray);
       file_put_contents('usuarios.json',$userJson);
-      header('Location:http://google.com');
+      header('Location: home.php');
     }
 
 

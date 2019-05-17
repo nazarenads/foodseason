@@ -45,9 +45,16 @@ if($_POST){
         }
         //Si los datos coinciden con los almacenados, redirijo al usuario
           if(!$hayErroresDeVerificacion){
-          header('Location: http://google.com');
+            //Si el usuario pidió que se lo recuerde, almaceno sus datos en $_COOKIE por siete días
+            if(isset($_POST['remember'])){
+              setcookie('user', $username, time()+60*60*7);
+              setcookie('password', $password, time()+60*60*7);
+            }
+          session_start();
+          $_SESSION['username']= $username;
+          $_SESSION['password']= $password;
+          header('Location: home.php');
           }
-
         }
 
 
@@ -94,7 +101,7 @@ if($_POST){
             <?= $errorPasswordVerify ?>
            </div>
            <div class="form-check">
-             <input type="checkbox" class="form-check-input" id="materialUnchecked">
+             <input type="checkbox" class="form-check-input" id="materialUnchecked" name="remember" value= "1">
              <label class="form-check-label" for="materialUnchecked">Recordarme</label>
            </div>
     		   <button class="btn btn-warning" style="width:100%" id="submit" type="submit" name="subm">Enviar</button>
