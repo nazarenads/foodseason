@@ -36,6 +36,8 @@ session_start();
     <div class="" style="color:white; text-align:left; margin:20px;position:absolute;z-index:30">
     <h3><?= "Hola ". $_SESSION['username']."!" ?></h3>
     <a href="logout.php" style="color:white;">¿Querés cerrar sesión?</a>
+    <a href="editprofile.php" style="color:white;"> <i class="fas fa-user-edit"></i> </a>
+
   </div>'
   <?php
   }
