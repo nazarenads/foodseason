@@ -1,4 +1,5 @@
 <?php
+
 //Defino variables vacías para cada campo a completar
 $email = "";
 $username = "";
@@ -16,30 +17,12 @@ $hayErrores = false;
 if($_POST){
 
   //Tomo lo recibido y lo guardo sin espacios
-  $username = trim($_POST["username"]);
   $email = trim($_POST["email"]);
   $password = trim($_POST["password"]);
   $passwordConfirm = trim($_POST["passwordConfirm"]);
   $profilePicture = $_FILES["profilePicture"];
 
-  //Valido cada dato
-  if($username == ""){
-    $errorUsername = "Completá tu nombre de usuario!";
-    $hayErrores = true;
-  }
-  if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    $errorEmail = "El email que ingresaste no es válido";
-    $hayErrores = true;
-  }
-  if($password == ""){
-    $errorPassword = "Completá tu contraseña!";
-    $hayErrores = true;
-  }
-  else if (strlen($password)<4)
-    {
-      $errorPassword = "Tu contraseña debe tener al menos 4 caracteres!";
-      $hayErrores = true;
-    }else if($password != $passwordConfirm){
+if($password != $passwordConfirm){
       $errorPassword = "Las contraseñas que ingresaste no coinciden!";
       $hayErrores = true;
     }
@@ -104,7 +87,7 @@ if($_POST){
     <?php include("partials/header.php") ?>
     <div class="container">
       <br>
-        <h1>Editar perfil</h1>
+        <h1 style="margin-top:60px;">Editar perfil</h1>
       <br>
       	<hr>
     	<div class="row">
@@ -123,25 +106,29 @@ if($_POST){
 <br>
             <div class="formulario">
            <form action="editprofile.php" method="post" class="form-editprofile" enctype="multipart/form-data">
+             <div class="form-group">
+               <label for="username"><h4>Tu nombre de usuario es:</h4></label>
+              <h4><?= $_SESSION['username'] ?> </h4>
+             </div>
 
             <div class="form-group">
+              <label for="email"><h4>Ingresa tu nuevo email:</h4></label>
              <input name="email" type="text" class="form-control" placeholder="Email" value="<?=$email?>">
              <?= $errorEmail ?>
             </div>
+
             <div class="form-group">
-             <input name="username" type="text" class="form-control" placeholder="Usuario" value="<?=$username?>">
-             <?= $errorUsername ?>
-            </div>
-            <div class="form-group">
+              <label for="password"><h4>Ingresa tu nueva contraseña:</h4></label>
              <input type="password" class="form-control" name="password" placeholder="Contraseña" value="<?=$password?>">
              <?= $errorPassword ?>
             </div>
              <div class="form-group">
+               <label for="passwordConfirm"><h4>Confirma tu nueva contraseña:</h4></label>
              <input type="password" class="form-control" name="passwordConfirm" placeholder="Confirmar contraseña" value= "<?=$passwordConfirm?>">
             </div>
             <br>
             <br>
-            <button class="btn btn-warning" style="width:30%; margin:auto" type="submit" name="submit">Guardar cambios</button>
+            <button class="btn btn-warning" style="width:30%; margin:auto; color:white;" type="submit" name="submit">Guardar cambios</button>
            </form>
 
             </div>
