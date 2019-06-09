@@ -28,7 +28,7 @@ if($_POST){
   $destino = $destino."recipePictures/";
 //genero la ruta donde guardo el archivo, acá falta que username se tome desde $_SESSION
   $destino = $destino."usernameRecipePicture".$id.".".$ext;
-//guardo el archivo con esta funciongma
+//guardo el archivo con esta funcion
   move_uploaded_file($origen,$destino);
   }
 //redirijo al post que se corresponde con esta ultima receta
