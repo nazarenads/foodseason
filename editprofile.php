@@ -20,7 +20,7 @@ if($_POST){
   $email = trim($_POST["email"]);
   $password = trim($_POST["password"]);
   $passwordConfirm = trim($_POST["passwordConfirm"]);
-  $profilePicture = $_FILES["profilePicture"];
+  // $profilePicture = $_FILES["profilePicture"];
 
 if($password != $passwordConfirm){
       $errorPassword = "Las contraseñas que ingresaste no coinciden!";
@@ -28,42 +28,41 @@ if($password != $passwordConfirm){
     }
 
   //Si recibo una foto de perfil
-
-  if(isset($_FILES["profilePicture"])){
-      //si el dato de error es OK...
-    if($_FILES["profilePicture"]["error"] === UPLOAD_ERR_OK){
-      //guardo el nombre del archivo
-      $pictureName = $_FILES["profilePicture"]["name"];
-      //guardo el nombre temporal del archivo
-      $origen = $_FILES["profilePicture"]["tmp_name"];
-      //uso la informacion del path que es la url, para tomar y guardar la extension
-      $ext = pathinfo($pictureName,PATHINFO_EXTENSION);
-
-      $destino = "";
-      $destino = $destino."archivos/";
-      //genero la ruta donde guardo el archivo
-      $destino = $destino.$username."fotodeperfil.".$ext;
-
-      //guardo el archivo con esta funcion
-      move_uploaded_file($origen,$destino);
-      $errorPicture = "Subiste tu foto con éxito!";
-      }
-    }else{
-        $errorPicture = "Ups! Hubo un error al subir tu foto";
-        $hayErrores = true;
-    }
+  //
+  // if(isset($_FILES["profilePicture"])){
+  //     //si el dato de error es OK...
+  //   if($_FILES["profilePicture"]["error"] === UPLOAD_ERR_OK){
+  //     //guardo el nombre del archivo
+  //     $pictureName = $_FILES["profilePicture"]["name"];
+  //     //guardo el nombre temporal del archivo
+  //     $origen = $_FILES["profilePicture"]["tmp_name"];
+  //     //uso la informacion del path que es la url, para tomar y guardar la extension
+  //     $ext = pathinfo($pictureName,PATHINFO_EXTENSION);
+  //
+  //     $destino = "";
+  //     $destino = $destino."archivos/";
+  //     //genero la ruta donde guardo el archivo
+  //     $destino = $destino.$username."fotodeperfil.".$ext;
+  //
+  //     //guardo el archivo con esta funcion
+  //     move_uploaded_file($origen,$destino);
+  //     $errorPicture = "Subiste tu foto con éxito!";
+  //     }
+  //   }else{
+  //       $errorPicture = "Ups! Hubo un error al subir tu foto";
+  //       $hayErrores = true;
+  //   }
 
 // Si no hay ningún error guardo los datos validados en un array asociativo
-    if(!$hayErrores){
-      $userArray = [
-      "username"=> $username,
-      "email"=> $email,
-      "profilePicture" => $username."profilePicture.".$ext,
-      "password" => password_hash($password, PASSWORD_DEFAULT)];
-      $userJson = json_encode($userArray);
-      file_put_contents('usuarios.json',$userJson);
-      header('Location: signin.php');
-    }
+if(!$hayErrores){
+  $json = file_get_contents('usuarios.json');
+  $data = json_decode($json, true);
+  $data['email'] = $email;
+  $data['password'] = password_hash($password, PASSWORD_DEFAULT);
+  $userJson = json_encode($data);
+  file_put_contents('usuarios.json',$userJson);
+  header('Location: editprofile.php');
+}
 
 }
 
@@ -91,7 +90,7 @@ if($password != $passwordConfirm){
       <br>
       	<hr>
     	<div class="row">
-          <div class="col-12">
+          <!-- <div class="col-12">
             <div class="text-center">
               <img src="img\profiledefault.png" class="avatar" alt="avatar">
                 <br>
@@ -101,7 +100,7 @@ if($password != $passwordConfirm){
               <input name="profilePicture" type="file" value="">
               <?= $errorPicture ?>
              </div>
-            </div>
+            </div> -->
 <br>
 <br>
             <div class="formulario">
