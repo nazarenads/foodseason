@@ -107,7 +107,7 @@ if($_POST){
     		   <button class="btn btn-warning" style="width:100%" id="submit" type="submit" name="subm">Ingresar</button>
     		   <br/><br>
     		   <a class="btn btn-light" href="signup.php" role="button">¿Todavía no tenés una cuenta?</a>
-    		   <a class="btn btn-light" href="#" role="button">¿Te olvidaste tu contraseña?</a>
+    		   <a class="btn btn-light" href="forgottenPass.php" role="button">¿Te olvidaste tu contraseña?</a>
     		  </form>
 
            </div>
