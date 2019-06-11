@@ -28,6 +28,9 @@
                 <h4 class="card-title">¡Llegaste a la red de recetas más cómoda!</h4>
                 <p class="card-text">Encontrá y subí tus propias recetas con fotos y comentarios reales.</p>
                 <p class="card-text">¡Averigüá los ingredientes que usa tu vecina en su cocina que huele tan bien!</p>
+                <?php if(isset($_SESSION['username'])){?>
+                  <a href=CRUDrecipes/uploadRecipe.php><button type="button" name="button">Subir recetas</button></a>
+                <?php } ?>
               </div>
             </div>
           </div>
