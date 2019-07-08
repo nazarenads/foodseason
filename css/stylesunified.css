@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  color: white;
+}
+.home-body{
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/chinh-le-duc-264152-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.faqs-body{
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/cook.jpg") no-repeat center center fixed;
+}
+.editprofile-body{
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/editprofile.jpg") no-repeat center center fixed;
+  color: white;
+}
+.signin-signup-body{
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/bg-table.jpg") no-repeat center center fixed;
+}
+.forgotten-recover-body{
+  background: linear-gradient(rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), url("../img/bg-table.jpg") no-repeat center center fixed;
+}
+.container-signin-signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-signin-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 130px;
+}
+.form-signup {
+  max-width: 430px !important;
+  padding: 15px;
+}
+
+.form-signup-heading{
+  margin-bottom: 10px;
+}
+h1{
+  font-family: 'Courgette', cursive;
+  /* text-align: center; */
+  }
+h2{
+  color:white;
+  margin:20px;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* acá va lo que viene del home*/
+.card {
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  border-color: transparent;
+  width: 25rem;
+  margin-top: 25%;
+}
+p{
+  font-family: 'Raleway';
+  color: rgb(175,175,175);
+  font-size: 1.2em;
+  }
+
+/* acá termina lo que viene del home*/
+
+.btn-signin-signup{
+  background-color: #EB6E80;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-light-signin-signup{
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}

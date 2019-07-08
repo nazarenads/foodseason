@@ -16,7 +16,7 @@
 
     <title>Food Season - FAQs</title>
   </head>
-  <body style="font-family: 'Raleway', sans-serif;">
+  <body class = "faqs-body">
 
     <?php include("partials/header.php") ?>
 

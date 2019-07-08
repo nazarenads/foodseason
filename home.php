@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Hoja de estilo y tipografías -->
-    <link rel="stylesheet" href="css/estilosDelHome.css">
+    <link rel="stylesheet" href="css/stylesunified.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Food Season / Hola!</title>
   </head>
-  <body>
+  <body class = "home-body">
     <?php include("partials/header.php") ?>
 
     <section>
@@ -25,7 +25,7 @@
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">¡Llegaste a la red de recetas más cómoda!</h4>
+                <h4 class="card-title"  style="margin-bottom: 15%;   font-size: 1.5em;" >¡Llegaste a la red de recetas más cómoda!</h4>
                 <p class="card-text">Encontrá y subí tus propias recetas con fotos y comentarios reales.</p>
                 <p class="card-text">¡Averigüá los ingredientes que usa tu vecina en su cocina que huele tan bien!</p>
                 <?php if(isset($_SESSION['username'])){?>

@@ -116,18 +116,18 @@ if($_POST){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesunified.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Food Season - Registrarse</title>
   </head>
-  <body>
+  <body class ="signin-signup-body">
     <?php include("partials/header.php") ?>
 
     <section class="register" id="register">
-          <div class="container">
-           <div class="formulario">
+          <div class="container-signin-signup">
+           <div class="form-signin-signup">
 
 
     		  <form action="signup.php" method="post" class="form-signup" enctype="multipart/form-data">
@@ -167,10 +167,10 @@ if($_POST){
            <div class="form-group">
           <input type="password" class="form-control" name="secretAnswerConfirm" placeholder="Confirma tu respuesta secreta" value= "<?=$secretAnswerConfirm?>">
          </div>
-    		   <button class="btn btn-warning" style="width:100%" type="submit" name="submit">Crear cuenta</button>
+    		   <button class="btn btn-warning btn-signin-signup" style="width:100%" type="submit" name="submit">Crear cuenta</button>
     		   <br/><br>
-    		   <a class="btn btn-light" href="signin.php" role="button">¿Ya tenés una cuenta?</a>
-    		   <a class="btn btn-light" href="forgottenPass.php" role="button">¿Te olvidaste tu contraseña?</a>
+    		   <a class="btn btn-light btn-light-signin-signup" href="signin.php" role="button">¿Ya tenés una cuenta?</a>
+    		   <a class="btn btn-light btn-light-signin-signup" href="forgottenPass.php" role="button">¿Te olvidaste tu contraseña?</a>
 
           </form>
 

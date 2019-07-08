@@ -76,23 +76,23 @@ if(!$hayErrores){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/editprofile.css">
+    <link rel="stylesheet" href="css/stylesunified.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Food Season - Edit Profile</title>
   </head>
-  <body>
+  <body class= "editprofile-body">
     <?php include("partials/header.php") ?>
     <div class="container">
       <br>
-        <h1 style="margin-top:60px;">Editar perfil</h1>
+        <h1 style="margin-top:60px; font-family: 'Raleway', sans-serif;">Editar perfil</h1>
       <br>
       	<hr>
     	<div class="row">
           <!-- <div class="col-12">
             <div class="text-center">
-              <img src="img\profiledefault.png" class="avatar" alt="avatar">
+              <img src="img\profiledefault.png" class="avatar-editprofile" alt="avatar">
                 <br>
               <div class="form-group">
                 <br>

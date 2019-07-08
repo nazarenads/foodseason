@@ -8,7 +8,7 @@ body{
   position: relative;
   background-size: cover;
 }
-.container{
+.container-signin-signup{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
-.formulario {
+.form-signin-signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,13 +47,13 @@ h1{
 h3{
   font-family: 'Raleway', sans-serif;
 }
-.btn{
+.btn-signin-signup{
   background-color: #EB6E80;
   color: white;
   font-family: 'Raleway', sans-serif;
 }
 
-.btn-light{
+.btn-light-signin-signup{
   margin-bottom: 10px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);

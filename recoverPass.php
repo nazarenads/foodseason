@@ -69,7 +69,7 @@ if($_POST){
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Food Season - Cambiar Contraseña</title>
   </head>
-  <body>
+  <body class= "forgotten-recover-body">
     <?php include("partials/header.php") ?>
 
     <section class="register" id="register">
