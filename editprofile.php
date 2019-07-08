@@ -127,7 +127,7 @@ if(!$hayErrores){
             </div>
             <br>
             <br>
-            <button class="btn btn-warning" style="width:30%; margin:auto; color:white;" type="submit" name="submit">Guardar cambios</button>
+            <button class="btn btn-warning" style="width:100%; margin:auto; color:white;" type="submit" name="submit">Guardar cambios</button>
            </form>
 
             </div>
